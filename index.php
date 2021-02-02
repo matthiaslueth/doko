@@ -8,6 +8,8 @@ session_start();
 </head>
 <body>
 
+
+
 <?php
 
 //Session starten, wenn keine existiert.

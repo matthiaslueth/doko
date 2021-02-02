@@ -36,7 +36,7 @@ label {
 
   </style>
 </head>
-<body style="height:100vh;;">
+<body style="height:100vh;overflow:hidden;">
 
 <?php
 

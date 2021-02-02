@@ -7,8 +7,43 @@
 
 .login {
   display:flex;
+  flex-wrap:wrap;
   width:100vw;
   height:100vh;
   justify-content: center;
+  align-content: space-around;
   align-items: center;
+}
+
+.login h1 {
+  width:100vw;
+  text-align: center;
+}
+
+.login form {
+  display:flex;
+
+  border-radius: 11px;
+  border: 1px solid #ccc;
+}
+
+.login input {
+  height:50px;
+  width:300px;
+  padding:10px;
+  margin:0;
+  border: 0;
+  background-color: #eee;
+  border-radius: 10px 0 0 10px;
+}
+
+.login button {
+  height:50px;
+  margin:0;
+  padding:10px;
+  border: 0;
+  background-color: #ccc;
+  border-radius: 0 10px 10px 0;
+  color: #555;
+  font-weight: 700;
 }

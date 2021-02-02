@@ -14,7 +14,7 @@ $i = 0;
 
 $tisch = "";
 while ($i < $n) {
-$tisch .= "<img src=\"cards/{$file[$i]}\".gif>";
+$tisch .= "<img src=\"cards/{$file[$i]}.png\">";
 $i++;
 }
 

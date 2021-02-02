@@ -2,3 +2,5 @@
 .htpasswd
 cards/*
 *.gif
+*.png
+*.jpg

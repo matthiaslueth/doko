@@ -3,11 +3,8 @@ session_start();
 
 $name = $_POST['name'];
 
-if ($name == NULL) {
+if ($name != NULL) {
 
-}
-
-else {
   $_SESSION['name'] = $name;
 
 }

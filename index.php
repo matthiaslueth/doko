@@ -16,9 +16,10 @@ session_start();
 
 include("start.php");
 
+if ($_SESSION['name'] != NULL){
 
 echo "<a style=\"position:absolute;right:15px;top:10px;\" href=\"destroy.php\">Logout</a>";
-
+}
 
 ?>
 </body>

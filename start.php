@@ -10,7 +10,8 @@ if ($name != NULL) {
 
 if ($_SESSION['name'] == NULL)
 {
-  echo "<div class=\"login\">
+  echo "
+  <div class=\"login\">
   <h1>Doppelkopf 2.0</h1>
           <form action=\"index.php\" method=\"post\">
             <input name=\"name\" type=\"text\" placeholder=\"Lege einen Namen fest...\">

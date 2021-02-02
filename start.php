@@ -6,17 +6,16 @@ $name = $_POST['name'];
 if ($name != NULL) {
 
   $_SESSION['name'] = $name;
-
 }
 
 if ($_SESSION['name'] == NULL)
 {
-
-
-  echo "<form action=\"index.php\" method=\"post\">
-          Name: <input name=\"name\" type=\"text\">
-          <button type=\"submit\">Absenden</button>
-        </form>";
+  echo "<div class=\"login\">
+          <form action=\"index.php\" method=\"post\">
+            Name: <input name=\"name\" type=\"text\">
+            <button type=\"submit\">Absenden</button>
+          </form>
+        </div>";
 }
 
 else {

@@ -15,6 +15,7 @@ session_start();
 //Session starten, wenn keine existiert.
 
 include("start.php");
+include("lobby.php");
 
 if ($_SESSION['name'] != NULL){
 

@@ -25,7 +25,9 @@ file_put_contents('lobby/open.txt', json_encode($open));
 
 
 file_put_contents('lobby/' . $id . '.txt', json_encode($file));
+
+$_SESSION['gid'] = $id;
  ?>
 
 Spiel erstellt.
-<meta http-equiv="refresh" content="5, URL=index.php">
+<meta http-equiv="refresh" content="0.5, URL=index.php">

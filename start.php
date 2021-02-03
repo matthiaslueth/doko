@@ -4,7 +4,26 @@ session_start();
 $name = $_POST['name'];
 
 if ($name != NULL) {
-  $_SESSION['name'] = $name;
+
+  $file = file_get_contents('user/user.txt', true);
+  $file = json_decode($file);
+
+  if ($file == NULL)
+  {
+    $file =[];
+  }
+
+  if (in_array($name, $file))
+  {
+    echo "Username ist vergeben. Session übernehmen?";
+  }
+
+  else {
+    $_SESSION['name'] = $name;
+    array_push($file, $name);
+    file_put_contents ('user/user.txt', json_encode($file));
+  }
+
 }
 
 if ($_SESSION['name'] == NULL)
@@ -22,26 +41,11 @@ if ($_SESSION['name'] == NULL)
 }
 
 else {
-  echo "Hallo {$_SESSION['name']}! Session läuft :)<br/>";
+  //echo "Hallo {$_SESSION['name']}! Session läuft :)<br/>";
 }
 
 
 
-
-
-/*$file = file_get_contents('user/' . $name . '.txt', true);
-$file = json_decode($file);
-
-if ($file == NULL)
-{
-  $file =[];
-}
-$a = date('r');
-$b = time();
-
-$new = array($a, $b);
-
-file_put_contents ('user/' . $name . '.txt', json_encode($new), FILE_APPEND );*/
 
 
 

@@ -39,7 +39,7 @@ while ($i < $n) {
     }
   echo "<form action=\"join.php\" method=\"post\">
     <input type=\"hidden\" name=\"id\" value=" . $open[$i] . ">
-   <button type=\"submit\">Beitreten</button></div>";
+   <button type=\"submit\">Beitreten</button></div></form>";
 
   $i++;
 }

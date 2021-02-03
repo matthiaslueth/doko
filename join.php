@@ -4,6 +4,7 @@ session_start();
 
 $id = $_POST['id'];
 
+echo $id;
 
 $tn = file_get_contents('lobby/' . $id . '.txt', true);
 $tn = json_decode($tn);

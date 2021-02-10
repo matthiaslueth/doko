@@ -22,6 +22,7 @@ if ($name != NULL) {
     $_SESSION['name'] = $name;
     array_push($file, $name);
     file_put_contents ('user/user.txt', json_encode($file));
+    $_SESSION['cards'] = "hcards/cards";
   }
 
 }

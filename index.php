@@ -24,18 +24,6 @@ echo "<div style=\"position:absolute;right:0px;top:0px;padding:10px;background-c
 
 ?>
 
-<div id="result"></div>
-
-<!--script>
-if(typeof(EventSource) !== "undefined") {
-  var source = new EventSource("info.php");
-  source.onmessage = function(event) {
-    document.getElementById("result").innerHTML += event.data + "<br>";
-  };
-} else {
-  document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
-}
-</script-->
 
 </body>
 </html>

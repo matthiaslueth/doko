@@ -1,0 +1,1 @@
+["CK","CT","CA","CJ","HJ","PJ","KJ","CQ","HQ","PQ","KQ","HT"]
